@@ -1,0 +1,5 @@
+block content
+  div(id='app')!= body
+  if preloadedState
+    script(type='text/javascript') window.__PRELOADED_STATE__ = !{JSON.stringify(preloadedState)}
+  script(src='/bundle.js')
